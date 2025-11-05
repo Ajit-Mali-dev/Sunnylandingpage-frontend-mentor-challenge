@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: all 2s ease-in-out;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    font-family: "Barlow", sans-serif;
+}
+
+header nav{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div{
+    font-size: 13px;
+}
+
+nav div button{
+    background: none;
+    border: none;
+    margin: 0 20px;
+    color: white;
+}
+
+nav  div a{
+    text-decoration: none;
+    color: inherit;
+}
+
+div .contact{
+    height: 100%;
+    border-radius: 20px;
+    color: black;
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-right: 0;
+}
+
+/*------------- hero section------------- */
+
+main #hero{
+    height: 100vh;
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero p{
+    font-size: 60px;
+    position: absolute;
+    top: 120px;
+    text-transform: uppercase;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+    letter-spacing: 7px;
+}
+
+#hero .down-arrow{
+    height: 90px;
+    margin-top: 50px;
+}
+
+/*---------about-section--------*/
+
+main #about{
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-section-first-part{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#about .about-left-section{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .about-left-section p{
+    width: 70%;
+}
+
+#about .about-left-section .about-section-title{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 27%, 19%);
+} 
+
+#about .about-left-section .about-section-sub-title{
+    color: hsl(208, 11%, 23%);
+    font-family: "Barlow", sans-serif;
+    line-height: 30px;
+}
+
+#about .about-left-section .about-section-learn-more{
+    text-transform: uppercase;
+     font-weight: 900;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 27%, 19%);
+    text-decoration: underline 4px yellow;
+}
+
+#about .about-right-section{
+    height: 100%;
+    width: 50%;
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+}
+
+#about .about-right-section img{
+    height: 100%;
+    width: 100%;
+}
+
+#about .about-section-second-part{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-section-second-part-left-section{
+    height: 100%;
+    width: 50%;
+}
+#about .about-section-second-part-left-section img{
+    height: 100%;
+    width: 100%;
+}
+
+#about .about-section-second-part-right-section{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-section-second-part-right-section p{
+    width: 70%;
+}
+
+#about  .about-section-second-part-title{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 27%, 19%);
+}
+
+#about .about-section-second-sub-title{
+    color: hsl(208, 11%, 23%);
+    font-family: "Barlow", sans-serif;
+    line-height: 30px;
+}
+
+#about .about-section-second-learn-more{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 27%, 19%);
+    text-decoration: underline 4px yellow;
+}
+
+
+/* -------------services - section-------------*/
+
+#services{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#services .services-left-part{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    object-fit: fill;
+    object-position: top;
+}
+
+#services .services-left-part img{
+    position: relative;
+    right: 40px;
+}
+
+#services .services-left-part div{
+    position: absolute;
+    width: 50%;
+    right: 150px;
+    text-align: center;
+    bottom: 45px;
+}
+
+.services-left-part div .title{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 27%, 19%);
+    padding-bottom: 30px;
+}
+
+.services-left-part div p{
+    font-family: "Barlow", sans-serif;
+    color: hsl(207, 29%, 19%);
+}
+
+#services .services-right-part{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    object-fit: fill;
+    object-position: top;
+    overflow: hidden;
+}
+
+#services .services-right-part img{
+    position: relative;
+    right: 40px;
+}
+
+#services .services-right-part div{
+    position: absolute;
+    width: 50%;
+    right: 150px;
+    text-align: center;
+    bottom: 60px;
+}
+
+.services-right-part div .title{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 27%, 19%);
+    padding-bottom: 10px;
+}
+
+.services-right-part div p{
+    font-family: "Barlow", sans-serif;
+    color: hsl(207, 29%, 19%);
+}
+
+/*--------section-client-review-----------*/
+
+#client-reviews{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#review-container{
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.review-section-heading .review-heading{
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#review-container .review-section-heading{
+    height: 20%;
+    width: 100%;
+    position: relative;
+    top: 40px;
+    color: hsl(232, 10%, 55%)
+}
+
+#review-container .review-section-content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#review-1,
+#review-2,
+#review-3{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#review-1 div,
+#review-2 div,
+#review-3 div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#review-1 .client-profile,
+#review-2 .client-profile,
+#review-3 .client-profile{
+    height: 100px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#review-1 img,
+#review-2 img,
+#review-3 img{
+    border-radius: 50%;
+    height: 60%;
+}
+
+#review-1 .client-comment p,
+#review-2 .client-comment p,
+#review-3 .client-comment p{
+    font-size: 15px;
+    line-height: 25px;
+    color: hsl(212, 27%, 19%);
+    font-weight: 500;
+    width: 89%;
+    text-align: center;
+    height: 120px;
+    font-family: "Barlow", sans-serif;
+}
+
+#review-1 .client-name,
+#review-2 .client-name,
+#review-3 .client-name{
+    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 27%, 19%)
+}
+
+#review-1 .client-work,
+#review-2 .client-work ,
+#review-3 .client-work{
+    font-family: "Barlow", sans-serif;
+    color: hsl(211, 20%, 37%);
+    font-size: 13px;
+    padding-top: 5px;
+} 
+
+#project{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+}
+
+#project div{
+    height: 100%;
+    width: 25%;
+}
+
+#project img{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    object-position: top;
+}
+
+footer{
+    height: 40vh;
+    width: 100%;
+    background-color: hsl(167, 34%, 41%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer #footer-container{
+    height: 20vh;
+    width: 40%;
+}
+
+footer .company-logo{
+    height: 40px;
+    filter: brightness(0) saturate(100%) invert(13%) sepia(26%) saturate(749%) hue-rotate(118deg) brightness(94%) contrast(88%);
+}
+
+footer .footer-nav-buttons{
+    height: 40px;
+    width: 100%;
+}
+
+footer button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer button{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Barlow", sans-serif;
+    color: hsl(210, 28%, 15%);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+footer .social-media-handles{
+    width: 100%;
+    height: 30px;
+    padding-top: 40px;
+}
+
+footer .social-media-handles img{
+    padding: 0px 15px;
+    filter: brightness(0) saturate(100%) invert(13%) sepia(26%) saturate(749%) hue-rotate(118deg) brightness(94%) contrast(88%);
+}
+
