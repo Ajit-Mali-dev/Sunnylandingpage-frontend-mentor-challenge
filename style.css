@@ -5,7 +5,6 @@
 
 html{
     scroll-behavior: smooth;
-    transition: all 2s ease-in-out;
 }
 
 body{
@@ -13,6 +12,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-size: 18px;
+    width: 100%;
 }
 
 header{
@@ -64,15 +64,20 @@ div .contact{
 }
 
 /*------------- hero section------------- */
+main{
+    width: 100%;
+}
 
 main #hero{
     height: 100vh;
+    width: 100%;
     background-image: url(images/desktop/image-header.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #hero p{
@@ -472,3 +477,302 @@ footer .social-media-handles img{
     filter: brightness(0) saturate(100%) invert(13%) sepia(26%) saturate(749%) hue-rotate(118deg) brightness(94%) contrast(88%);
 }
 
+@media (min-width: 320px) and (max-width : 400px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header{
+        height: 10px;
+        margin-top: 20px;
+        padding-top: 0;
+    }
+
+    header nav{
+        width: 90%;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    header nav div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    nav div h1{
+        font-size: 15px;
+    }
+
+    nav div button{
+        display: none;
+    }
+
+    main {
+        overflow: hidden;
+    }
+
+   #hero .down-arrow{
+        height:90px;
+        position: relative;
+        top: 30px;
+    }
+
+    main #hero{
+        background-image: url(images/mobile/image-header.jpg);
+        background-position: bottom;
+        background-size:cover;
+    }
+
+    #hero p{
+        font-size:30px;
+        position: absolute;
+        letter-spacing: 5px;
+        left: 20px;
+        text-align: center;
+        top: 80px;
+        width:90%;
+        overflow: hidden;
+    }
+
+    main #about{
+        overflow: hidden;
+        height: 300vh;
+        width: 100%;
+    }
+
+   .about-section-first-part{
+        height: 150vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #about .about-section-second-part{
+        height: 150vh;
+        width: 100%;
+    }
+
+   #about .about-left-section{
+        height: 60% ;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+   #about .about-right-section{
+        height: 40%;
+        width: 100%;
+   }
+
+   #about .about-right-section img{
+        height: 100%;
+        width: 100%;
+        object-position: center;
+   }
+
+   #about .about-left-section p{
+        width: 90%;
+        text-align: center;
+        overflow: hidden;
+        font-size: 16px;
+   }
+
+   #about .about-left-section .about-section-title{
+        font-size: 30px;
+        margin-bottom: 0;
+   }
+
+   #about .about-section-second-part{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+   }
+
+   #about .about-section-second-part-left-section{
+        height: 40%;
+        width: 100%;
+    }
+
+    #about .about-section-second-part-right-section{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .about-section-second-part-right-section p{
+        text-align: center;
+        width: 80%;
+        font-size:15px;
+    }
+
+    #about  .about-section-second-part-title{
+        font-size: 30px;
+        width: 80%;
+    }
+
+    #services{
+        height: 200vh;
+        width: 100%;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #services .services-left-part{
+        height: 100vh;
+        width: 100%;
+    }
+
+    #services .services-right-part{
+        height: 100vh;
+        width: 100%;
+    }
+
+    #services .services-left-part img{
+        position: relative;
+        right: 140px;
+        height: 100%;
+    }
+
+    #services .services-left-part div{
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .services-left-part div .title{
+        font-size: 25px;
+    }
+
+    .services-left-part div p{
+          font-size: 12px;
+          line-height: 17px;
+          color:hsl(210, 14%, 28%);
+          font-weight: 600;
+    }
+
+    #services .services-right-part img{
+        height: 100%;
+        position: relative;
+        right: 150px;
+    }
+
+    #services .services-right-part div{
+        position: absolute;
+        top: 60%;
+        width: 90%;
+        left: 5%;
+    }
+
+    .services-right-part div p{
+        font-size: 13px;
+    }
+
+    #client-reviews{
+        height: 200vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #review-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }    
+
+    #review-container .review-section-heading{
+        height: 10%;
+        padding-top: 60px;
+        position: static;
+    }
+
+    .review-section-heading .review-heading{
+        width: 100%;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    #review-container .review-section-content{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+
+
+    #review-1,
+    #review-2,
+    #review-3{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #review-1 .client-profile,
+    #review-2 .client-profile,
+    #review-3 .client-profile{
+        height: 100px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    #project{
+        height: 80vh;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+    }
+
+    #project div{
+        width: 100%;        
+    }
+
+    footer{
+        height: 50vh;
+        width: 100%;
+    }
+
+    footer #footer-container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #footer-container div{
+        height: 50%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .social-media-handles{
+        padding: 0;
+        padding-bottom: 30px;
+    }
+}
